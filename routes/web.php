@@ -11,13 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('list');
-});
+Route::get('/article',[
+    'as' => 'article.list',
+    'uses' => 'ArticleController@listArticle'
+]);
 
-Route::get('/article', function () {
-    return view('articleWrite');
-});
+Route::get('/article/write',[
+    'as' => 'article.form',
+    'uses' => 'ArticleController@formArticle'
+]);
+
+Route::post('/article/write',[
+    'as' => 'article.store',
+    'uses' => 'ArticleController@storeArticle'
+]);
+
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');

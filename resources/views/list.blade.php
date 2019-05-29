@@ -15,7 +15,7 @@
                     <td>{{ $article->id }}</td>
                     <td><a href="/article/{{ $article->id }}">{{ $article->title }}</a></td>
                     <td>{{ $article->user['name']}}</td>
-                    @if($article->updated_at === '')
+                    @if($article->updated_at == null)
                         <td>{{ $article->created_at }}</td>
                     @else
                         <td>{{ $article->updated_at }}</td>
@@ -25,6 +25,7 @@
                 <p>게시글이 없습니다.</p>
             @endforelse
         </table>
+
 
     </div>
 
