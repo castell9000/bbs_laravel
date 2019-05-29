@@ -1134,7 +1134,7 @@
     </column>
     <column id="285" parent="279" name="title">
       <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1186,7 +1186,7 @@
     </column>
     <column id="294" parent="280" name="content">
       <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>

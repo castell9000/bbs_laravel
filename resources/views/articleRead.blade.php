@@ -11,7 +11,7 @@
             </div>
 
             <div class="context">
-                {{ $article->context }}
+                {{ $article->content }}
             </div>
         </div>
         <hr/>
